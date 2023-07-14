@@ -1,0 +1,11 @@
+{
+    pdfText = ExtractText(filePath, (int)pageNumber, (int)pageNumber, (int)extractionStrategy, pass);
+}
+catch (NullReferenceException nullRefEx)
+{
+    errorMessage = "Page " + pageNumber.ToString() + " does not exist within given document";
+}
+catch (Exception ex)
+{
+    errorMessage = ex.Message;
+}
