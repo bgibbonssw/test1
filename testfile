@@ -1,3 +1,10 @@
+errorMessage = string.Empty;
+pdfText = string.Empty;
+byte[] pass = Encoding.UTF8.GetBytes(password);
+
+ 
+
+try
 {
     pdfText = ExtractText(filePath, (int)pageNumber, (int)pageNumber, (int)extractionStrategy, pass);
 }
